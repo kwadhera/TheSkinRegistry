@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="kwadhera">
+    <link rel="shortcut icon" href="/favicon-96x96.ico">
+
+    <title>SkinReg - The Skin Registry</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Select CSS -->
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Select JavaScript -->
+    <script src="js/bootstrap-select.js"></script>
+    <!-- Parse JS -->
+    <script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+    <script>
+    Parse.initialize("DdgrsqJvCIggR3MlL4Yt3N74lpSsL0AGpPKR4MxD", "43t08241dYgbYylDBxavWnZf9tl4HQw2xOcaCc0u");
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('select').selectpicker();
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $('select').selectpicker('mobile');
+}
+});
+</script>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">The Skin Registry</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#services">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>The Skin Registry</h1>
+                        <h3>Get alerted when your favorite League of Legends skins go on sale</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+
+                            <li>
+                                <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-send fa-fw"></i> <span class="network-name">Sign Up and save RP</span></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-muted" id="myModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+<form id="sender">
+  <div class="form-group">
+    <label class ="text-muted" for="userEmail">Email address</label>
+    <input type="email" class="form-control" id="userEmail" placeholder="Enter email">
+  </div>
+
+
+        <p class="text-muted">Select all of the skins you are interested in</p>
+
+
+  <div class="form-group">
+
+<select class="selectpicker" multiple data-live-search="true" data-width="100%" id="skinSel">
+<option value="101"> Justicar Aatrox</option>
+<option value="102"> Mecha Aatrox</option>
+<option value="103"> Dynasty Ahri</option>
+<option value="104"> Midnight Ahri</option>
+<option value="105"> Foxfire Ahri</option>
+<option value="106"> Popstar Ahri</option>
+<option value="107"> Nurse Akali</option>
+<option value="108"> Blood Moon Akali</option>
+<option value="109"> Silverfang Akali</option>
+<option value="110"> Golden Alistar</option>
+<option value="111"> Sweeper Alistar</option>
+<option value="112"> Infernal Alistar</option>
+<option value="113"> Emumu</option>
+<option value="114"> Little Knight Amumu</option>
+<option value="115"> Sad Robot Amumu</option>
+<option value="116"> Bird of Prey Anivia</option>
+<option value="117"> Hextech Anivia</option>
+<option value="118"> Blackfrost Anivia</option>
+<option value="119"> Panda Annie</option>
+<option value="120"> Prom Queen Annie</option>
+<option value="121"> Frostfire Annie</option>
+<option value="122"> Reverse Annie</option>
+<option value="123"> Sherwood Forest Ashe</option>
+<option value="124"> Woad Ashe</option>
+<option value="125"> Heartseeker Ashe</option>
+<option value="126"> Queen Ashe</option>
+<option value="127"> Amethyst Ashe</option>
+<option value="128"> Galactic Azir</option>
+<option value="129"> Boom Boom Blitzcrank</option>
+<option value="130"> Piltover Customs Blitzcrank</option>
+<option value="131"> iBlitzcrank</option>
+<option value="132"> Apocalyptic Brand</option>
+<option value="133"> Cryocore Brand</option>
+<option value="134"> Dragonslayer Braum</option>
+<option value="135"> El Tigre Braum</option>
+<option value="136"> Resistance Caitlyn</option>
+<option value="137"> Sheriff Caitlyn</option>
+<option value="138"> Officer Caitlyn</option>
+<option value="139"> Arctic Warfare Caitlyn</option>
+<option value="140"> Headhunter Caitlyn</option>
+<option value="141"> Desperada Cassiopeia</option>
+<option value="142"> Jade Fang Cassiopeia</option>
+<option value="143"> Siren Cassiopeia</option>
+<option value="144"> Mythic Cassiopeia</option>
+<option value="145"> Gentleman Cho'Gath</option>
+<option value="146"> Loch Ness Cho'Gath</option>
+<option value="147"> Jurassic Cho'Gath</option>
+<option value="148"> Battlecast Prime Cho'Gath</option>
+<option value="149"> Dragonwing Corki</option>
+<option value="150"> Urfrider Corki</option>
+<option value="151"> Lord Darius</option>
+<option value="152"> Bioforge Darius</option>
+<option value="153"> Dunkmaster Darius</option>
+<option value="154"> Woad King Darius</option>
+<option value="155"> Lunar Goddess Diana</option>
+<option value="156"> Dark Valkyrie Diana</option>
+<option value="157"> Corporate Mundo</option>
+<option value="158"> Rageborn Mundo</option>
+<option value="159"> Soul Reaver Draven</option>
+<option value="160"> Gladiator Draven</option>
+<option value="161"> Primetime Draven</option>
+<option value="162"> Death Blossom Elise</option>
+<option value="163"> Shadow Evelynn</option>
+<option value="164"> Tango Evelynn</option>
+<option value="165"> Safecracker Evelynn</option>
+<option value="166"> Frosted Ezreal</option>
+<option value="167"> Explorer Ezreal</option>
+<option value="168"> Pulsefire Ezreal</option>
+<option value="169"> Debonair Ezreal</option>
+<option value="170"> Spectral Fiddlesticks</option>
+<option value="171"> Bandito Fiddlesticks</option>
+<option value="172"> Fiddle Me Timbers</option>
+<option value="173"> Surprise Party Fiddlesticks</option>
+<option value="174"> Nightraven Fiora</option>
+<option value="175"> Royal Guard Fiora</option>
+<option value="176"> Atlantean Fizz</option>
+<option value="177"> Tundra Fizz</option>
+<option value="178"> Fisherman Fizz</option>
+<option value="179"> Void Fizz</option>
+<option value="180"> Enchanted Galio</option>
+<option value="181"> Commando Galio</option>
+<option value="182"> Gatekeeper Galio</option>
+<option value="183"> Spooky Gangplank</option>
+<option value="184"> Minuteman Gangplank</option>
+<option value="185"> Special Forces Gangplank</option>
+<option value="186"> Sultan Gangplank</option>
+<option value="187"> Sanguine Garen</option>
+<option value="188"> Commando Garen</option>
+<option value="189"> Dreadknight Garen</option>
+<option value="190"> Rugged Garen</option>
+<option value="191"> Steel Legion Garen</option>
+<option value="192"> Dino Gnar</option>
+<option value="193"> Hillbilly Gragas</option>
+<option value="194"> Superfan Gragas</option>
+<option value="195"> Gragas, Esq.</option>
+<option value="196"> Oktoberfest Gragas</option>
+<option value="197"> Hired Gun Graves</option>
+<option value="198"> Jailbreak Graves</option>
+<option value="199"> Mafia Graves</option>
+<option value="200"> Pool Party Graves</option>
+<option value="201"> Blood Knight Hecarim</option>
+<option value="202"> Reaper Hecarim</option>
+<option value="203"> Arcade Hecarim</option>
+<option value="204"> Blast Zone Heimerdinger</option>
+<option value="205"> Piltover Customs Heimerdinger</option>
+<option value="206"> Hazmat Heimerdinger</option>
+<option value="207"> Aviator Irelia</option>
+<option value="208"> Nightblade Irelia</option>
+<option value="209"> Frostblade Irelia</option>
+<option value="210"> Hextech Janna</option>
+<option value="211"> Frost Queen Janna</option>
+<option value="212"> Forecast Janna</option>
+<option value="213"> Commando Jarvan IV</option>
+<option value="214"> Dragonslayer Jarvan IV</option>
+<option value="215"> Warring Kingdoms Jarvan IV</option>
+<option value="216"> Darkforge Jarvan IV</option>
+<option value="217"> Jaximus</option>
+<option value="218"> Temple Jax</option>
+<option value="219"> Nemesis Jax</option>
+<option value="220"> Debonair Jayce</option>
+<option value="221"> Full Metal Jayce</option>
+<option value="222"> Mafia Jinx</option>
+<option value="223"> Firecracker Jinx</option>
+<option value="224"> Blood Moon Kalista</option>
+<option value="225"> Sakura Karma</option>
+<option value="226"> Sun Goddess Karma</option>
+<option value="227"> Statue of Karthus</option>
+<option value="228"> Grim Reaper Karthus</option>
+<option value="229"> Pentakill Karthus</option>
+<option value="230"> Pre-Void Kassadin</option>
+<option value="231"> Harbinger Kassadin</option>
+<option value="232"> Mercenary Katarina</option>
+<option value="233"> Bilgewater Katarina</option>
+<option value="234"> High Command Katarina</option>
+<option value="235"> Sandstorm Katarina</option>
+<option value="236"> Warring Kingdoms Katarina</option>
+<option value="237"> Viridian Kayle</option>
+<option value="238"> Battleborn Kayle</option>
+<option value="239"> Aether Wing Kayle</option>
+<option value="240"> Karate Kennen</option>
+<option value="241"> Kennen M.D.</option>
+<option value="242"> Arctic Ops Kennen</option>
+<option value="243"> Mecha Kha'Zix</option>
+<option value="244"> Guardian of the Sands Kha'Zix</option>
+<option value="245"> Monarch Kog'Maw</option>
+<option value="246"> Lion Dance Kog'Maw</option>
+<option value="247"> Deep Sea Kog'Maw</option>
+<option value="248"> Jurassic Kog'Maw</option>
+<option value="249"> Battlecast Kog'Maw</option>
+<option value="250"> Prestigious LeBlanc</option>
+<option value="251"> Wicked LeBlanc</option>
+<option value="252"> Acolyte Lee Sin</option>
+<option value="253"> Dragon Fist Lee Sin</option>
+<option value="254"> Traditional Lee Sin</option>
+<option value="255"> Muay Thai Lee Sin</option>
+<option value="256"> Pool Party Lee Sin</option>
+<option value="257"> Defender Leona</option>
+<option value="258"> Valkyrie Leona</option>
+<option value="259"> Iron Solari Leona</option>
+<option value="260"> Pool Party Leona</option>
+<option value="261"> Bloodstone Lissandra</option>
+<option value="262"> Blade Queen Lissandra</option>
+<option value="263"> Striker Lucian</option>
+<option value="264"> Hired Gun Lucian</option>
+<option value="265"> Bittersweet Lulu</option>
+<option value="266"> Wicked Lulu</option>
+<option value="267"> Dragon Trainer Lulu</option>
+<option value="268"> Sorceress Lux</option>
+<option value="269"> Spellthief Lux</option>
+<option value="270"> Commando Lux</option>
+<option value="271"> Imperial Lux</option>
+<option value="272"> Steel Legion Lux</option>
+<option value="273"> Obsidian Malphite</option>
+<option value="274"> Glacial Malphite</option>
+<option value="275"> Mecha Malphite</option>
+<option value="276"> Shadow Prince Malzahar</option>
+<option value="277"> Djinn Malzahar</option>
+<option value="278"> Overlord Malzahar</option>
+<option value="279"> Goalkeeper Maokai</option>
+<option value="280"> Charred Maokai</option>
+<option value="281"> Totemic Maokai</option>
+<option value="282"> Assassin Master Yi</option>
+<option value="283"> Chosen Master Yi</option>
+<option value="284"> Ionia Master Yi</option>
+<option value="285"> Samurai Yi</option>
+<option value="286"> Headhunter Master Yi</option>
+<option value="287"> Cowgirl Miss Fortune</option>
+<option value="288"> Waterloo Miss Fortune</option>
+<option value="289"> Secret Agent Miss Fortune</option>
+<option value="290"> Mafia Miss Fortune</option>
+<option value="291"> Arcade Miss Fortune</option>
+<option value="292"> Infernal Mordekaiser</option>
+<option value="293"> Pentakill Mordekaiser</option>
+<option value="294"> Lord Mordekaiser</option>
+<option value="295"> Sinful Succulence Morgana</option>
+<option value="296"> Blade Mistress Morgana</option>
+<option value="297"> Blackthorn Morgana</option>
+<option value="298"> Ghost Bride Morgana</option>
+<option value="299"> Koi Nami</option>
+<option value="300"> River Spirit Nami</option>
+<option value="301"> Galactic Nasus</option>
+<option value="302"> Pharaoh Nasus</option>
+<option value="303"> Dreadknight Nasus</option>
+<option value="304"> Infernal Nasus</option>
+<option value="305"> Abyssal Nautilus</option>
+<option value="306"> Subterranean Nautilus</option>
+<option value="307"> AstroNautilus</option>
+<option value="308"> French Maid Nidalee</option>
+<option value="309"> Pharaoh Nidalee</option>
+<option value="310"> Headhunter Nidalee</option>
+<option value="311"> Warring Kingdoms Nidalee</option>
+<option value="312"> Frozen Terror Nocturne</option>
+<option value="313"> Ravager Nocturne</option>
+<option value="314"> Eternum Nocturne</option>
+<option value="315"> Grungy Nunu</option>
+<option value="316"> Nunu Bot</option>
+<option value="317"> Demolisher Nunu</option>
+<option value="318"> Forsaken Olaf</option>
+<option value="319"> Brolaf</option>
+<option value="320"> Pentakill Olaf</option>
+<option value="321"> Gothic Orianna</option>
+<option value="322"> Sewn Chaos Orianna</option>
+<option value="323"> Bladecraft Orianna</option>
+<option value="324"> Myrmidon Pantheon</option>
+<option value="325"> Full Metal Pantheon</option>
+<option value="326"> Glaive Warrior Pantheon</option>
+<option value="327"> Dragonslayer Pantheon</option>
+<option value="328"> Battle Regalia Poppy</option>
+<option value="329"> Scarlet Hammer Poppy</option>
+<option value="330"> Phoenix Quinn</option>
+<option value="331"> Woad Scout Quinn</option>
+<option value="332"> Chrome Rammus</option>
+<option value="333"> Freljord Rammus</option>
+<option value="334"> Ninja Rammus</option>
+<option value="335"> Full Metal Rammus</option>
+<option value="336"> Eternum Rek'Sai</option>
+<option value="337"> Outback Renekton</option>
+<option value="338"> Bloodfury Renekton</option>
+<option value="339"> Rune Wars Renekton</option>
+<option value="340"> Pool Party Renekton</option>
+<option value="341"> Scorched Earth Renekton</option>
+<option value="342"> Headhunter Rengar</option>
+<option value="343"> Night Hunter Rengar</option>
+<option value="344"> Crimson Elite Riven</option>
+<option value="345"> Redeemed Riven</option>
+<option value="346"> Battle Bunny Riven</option>
+<option value="347"> Rumble in the Jungle</option>
+<option value="348"> Super Galaxy Rumble</option>
+<option value="349"> Dark Crystal Ryze</option>
+<option value="350"> Darkrider Sejuani</option>
+<option value="351"> Bear Cavalry Sejuani</option>
+<option value="352"> Mad Hatter Shaco</option>
+<option value="353"> Royal Shaco</option>
+<option value="354"> Asylum Shaco</option>
+<option value="355"> Masked Shaco</option>
+<option value="356"> Surgeon Shen</option>
+<option value="357"> Blood Moon Shen</option>
+<option value="358"> Warlord Shen</option>
+<option value="359"> Boneclaw Shyvana</option>
+<option value="360"> Ironscale Shyvana</option>
+<option value="361"> Darkflame Shyvana</option>
+<option value="362"> Ice Drake Shyvana</option>
+<option value="363"> Hextech Singed</option>
+<option value="364"> Surfer Singed</option>
+<option value="365"> Augmented Singed</option>
+<option value="366"> Barbarian Sion</option>
+<option value="367"> Lumberjack Sion</option>
+<option value="368"> Warmonger Sion</option>
+<option value="369"> Warrior Princess Sivir</option>
+<option value="370"> Bandit Sivir</option>
+<option value="371"> Earthrune Skarner</option>
+<option value="372"> Sandscourge Skarner</option>
+<option value="373"> Battlecast Alpha Skarner</option>
+<option value="374"> Pentakill Sona</option>
+<option value="375"> Arcade Sona</option>
+<option value="376"> Guqin Sona</option>
+<option value="377"> Dryad Soraka</option>
+<option value="378"> Divine Soraka</option>
+<option value="379"> Celestine Soraka</option>
+<option value="380"> Bilgewater Swain</option>
+<option value="381"> Northern Front Swain</option>
+<option value="382"> Tyrant Swain</option>
+<option value="383"> Justicar Syndra</option>
+<option value="384"> Atlantean Syndra</option>
+<option value="385"> Crimson Elite Talon</option>
+<option value="386"> Dragonblade Talon</option>
+<option value="387"> Renegade Talon</option>
+<option value="388"> Armor of the Fifth Age Taric</option>
+<option value="389"> Bloodstone Taric</option>
+<option value="390"> Astronaut Teemo</option>
+<option value="391"> Cottontail Teemo</option>
+<option value="392"> Super Teemo</option>
+<option value="393"> Panda Teemo</option>
+<option value="394"> Deep Terror Thresh</option>
+<option value="395"> Guerilla Tristana</option>
+<option value="396"> Buccaneer Tristana</option>
+<option value="397"> Rocket Girl Tristana</option>
+<option value="398"> Junkyard Trundle</option>
+<option value="399"> Lil' Slugger Trundle</option>
+<option value="400"> Constable Trundle</option>
+<option value="401"> King Tryndamere</option>
+<option value="402"> Demonblade Tryndamere</option>
+<option value="403"> Sultan Tryndamere</option>
+<option value="404"> Jack of Hearts Twisted Fate</option>
+<option value="405"> Tango Twisted Fate</option>
+<option value="406"> High Noon Twisted Fate</option>
+<option value="407"> Red Card Twisted Fate</option>
+<option value="408"> Musketeer Twisted Fate</option>
+<option value="409"> Gangster Twitch</option>
+<option value="410"> Pickpocket Twitch</option>
+<option value="411"> Black Belt Udyr</option>
+<option value="412"> Primal Udyr</option>
+<option value="413"> Spirit Guard Udyr</option>
+<option value="414"> Giant Enemy Crabgot</option>
+<option value="415"> Battlecast Urgot</option>
+<option value="416"> Blight Crystal Varus</option>
+<option value="417"> Arclight Varus</option>
+<option value="418"> Arctic Ops Varus</option>
+<option value="419"> Aristocrat Vayne</option>
+<option value="420"> Vindicator Vayne</option>
+<option value="421"> Heartseeker Vayne</option>
+<option value="422"> Dragonslayer Vayne</option>
+<option value="423"> White Mage Veigar</option>
+<option value="424"> Veigar Greybeard</option>
+<option value="425"> Leprechaun Veigar</option>
+<option value="426"> Superb Villain Veigar</option>
+<option value="427"> Final Boss Veigar</option>
+<option value="428"> Battlecast Vel'Koz</option>
+<option value="429"> Arclight Vel'Koz</option>
+<option value="430"> Neon Strike Vi</option>
+<option value="431"> Officer Vi</option>
+<option value="432"> Debonair Vi</option>
+<option value="433"> Full Machine Viktor</option>
+<option value="434"> Creator Viktor</option>
+<option value="435"> Marquis Vladimir</option>
+<option value="436"> Blood Lord Vladimir</option>
+<option value="437"> Soulstealer Vladimir</option>
+<option value="438"> Northern Storm Volibear</option>
+<option value="439"> Thunder Lord Volibear</option>
+<option value="440"> Runeguard Volibear</option>
+<option value="441"> Captain Volibear</option>
+<option value="442"> Big Bad Warwick</option>
+<option value="443"> Tundra Hunter Warwick</option>
+<option value="444"> Firefang Warwick</option>
+<option value="445"> Hyena Warwick</option>
+<option value="446"> Volcanic Wukong</option>
+<option value="447"> Jade Dragon Wukong</option>
+<option value="448"> General Wukong</option>
+<option value="449"> Battlecast Xerath</option>
+<option value="450"> Runeborn Xerath</option>
+<option value="451"> Scorched Earth Xerath</option>
+<option value="452"> Commando Xin Zhao</option>
+<option value="453"> Imperial Xin Zhao</option>
+<option value="454"> Warring Kingdoms Xin Zhao</option>
+<option value="455"> Winged Hussar Xin Zhao</option>
+<option value="456"> High Noon Yasuo</option>
+<option value="457"> PROJECT: Yasuo</option>
+<option value="458"> Pentakill Yorick</option>
+<option value="459"> Undertaker Yorick</option>
+<option value="460"> Special Weapon Zac</option>
+<option value="461"> Shockblade Zed</option>
+<option value="462"> Mad Scientist Ziggs</option>
+<option value="463"> Major Ziggs</option>
+<option value="464"> Pool Party Ziggs</option>
+<option value="465"> Groovy Zilean</option>
+<option value="466"> Shurima Desert Zilean</option>
+<option value="467"> Haunted Zyra</option>
+<option value="468"> Wildfire Zyra</option>
+</select>
+
+
+  </div>
+
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="doneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      </div>
+      <div class="modal-body">
+        
+<i class="fa fa-check-circle fa-5x text-muted"></i>
+        <h4 class="modal-title text-muted" id="myModalLabel">Thanks for signing up with The Skin Registry</h4>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+    <!-- /.intro-header -->
+
+
+<script>
+$(document).ready(function() {
+
+    $("#sender").submit(function(e){
+
+        e.preventDefault();
+        if ($("#userEmail").val() != ""){
+        saveData();}
+
+    })
+
+
+})
+</script>
+
+<script>
+    function saveData() {
+        var ESkin = Parse.Object.extend("ESkin");
+        var eSkin = new ESkin();
+        var emailAdd = $("#userEmail").val();
+        var skinsList = $("option:selected").map(function(){ return this.value }).get();
+        eSkin.set("userEmail", emailAdd);
+        eSkin.set("skinsList", skinsList);
+
+eSkin.save(null, {
+    success: function() {
+        console.log("User Added!");
+$('#myModal').modal('hide');
+$('#doneModal').modal('show');
+
+
+    }
+})
+
+
+    }//end of saveQuote
+</script>
+
+
+
+
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">About</h2>
+                    <p class="lead">Requested by the Reddit community.<br>Delivered by kwadhera.</p>
+                    <div class="centered">
+                    <a type="button" class="btn btn-primary" target="_blank" href="http://www.reddit.com/r/leagueoflegends">kwadhera &nbsp;&nbsp;<i class="fa fa-heart"></i>&nbsp;&nbsp; Reddit &nbsp;&nbsp;<i class="fa fa-heart"></i>&nbsp;&nbsp; Riot</a>
+                    </div>
+<p></p>
+<div class="centered">
+<a class="btn btn-primary" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CR7S68C3TDWZ6" role="button">Donate if we helped!</a>
+</div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class ="ha">Talk to Me</h2>
+                            <a target="_blank" href="http://www.reddit.com/user/kwadhera/" class="btn btn-default btn-lg pull-right"><i class="fa fa-reddit fa-fw"></i> <span class="network-name">Reddit</span></a>
+                                </div>
+   
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright text-muted small">Copyright &copy; kwadhera 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60000443-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
